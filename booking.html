@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+</head>
+
+<body  style="background-image: url('https://lukewickstead.files.wordpress.com/2010/12/debianflow.png');">
+    <div class="headerr">
+        <div class="city">
+            <div class="roww">
+                <div class="logo">
+                    <img src="images/logo.jpg" class="logoimage" alt="" />
+                </div>
+                <div style="margin-left: 20px;">
+                    <h1>HYDERABAD</h1>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <!-- <div style="background: rgb(133, 202, 21); height: 80px;"> -->
+        <!-- <nav class="navbar navbar-expand">
+            <div class="navbar_items">
+                <div class="collapse navbar-collapse" id="navbarNav"> -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item" style="margin-right: 30px;">
+                            <a id="item" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 30px;">
+                            <a  id="item" href="heritage.html">Heritage</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 30px;">
+                            <a  id="item" href="booking.html">Hotels</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 30px;">
+                            <a  id="item" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                <!-- </div>
+            </div>
+        </nav> -->
+    </div>
+
+    <div class="contain">
+        <div class="form_card">
+            <h2>HOTEL RESERVATION FORM</h1>
+                <div>
+                    <form action="booking.php" method="get">
+                        <table>
+                          
+                            <tr>
+                                <td class="label1">First Name</td>
+                                <td class="label1">Last Name</td>
+                            </tr>
+                            <tr>
+                                <td class="label"><input class="input" type="text" placeholder="First Name" name="fname" style="text-transform: capitalize;" required></td>
+                                <td class="label"><input class="input" type="text" placeholder="Last Name" name="lname" style="text-transform: capitalize;" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Phone No</td>
+                                <td class="label1">E-mail Id</td>
+                            </tr>
+                            <tr>
+                                <td class="label"><input class="input" type="number" placeholder="Mobile" name="phone" required></td>
+                                <td class="label"><input class="input" type="text" placeholder="E-Mail" name="email" style="text-transform: lowercase;" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Address 1</td>
+                                <td class="label1">Address 2</td>
+                            </tr>
+                            <tr>
+                                <td class="label"><input class="input" type="text" placeholder="Address1" name="add1" style="text-transform: capitalize;" required></td>
+                                <td class="label"><input class="input" type="text" placeholder="Address2" name="add2" style="text-transform: capitalize;"></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">City</td>
+                                <td class="label1">State</td>
+                            </tr>
+                            <tr>
+                                <td class="label"><input class="input" type="text" placeholder="City" name="city" style="text-transform: capitalize;" required></td>
+                                <td class="label"><input class="input" type="text" placeholder="State" name="State" style="text-transform: capitalize;" required></td>
+                            </tr>
+                           <tr>
+                                <td class="label1">Pincode</td>
+                            </tr>
+                            <tr>
+                                <td class="label"><input class="input" type="text" placeholder="Pincode" name="pincode" required></td>
+                            </tr>
+                        
+                            <tr id="division">
+                                <td style="padding-top: 2em;" class="label1">Hotel Name</td>
+                                <td style="padding-top: 2em;">
+                                    <select name="cars" id="cars" class="label">
+                                        <option value="volvo">---choose hotel---</option>
+                                        <option value="Paradise">Paradise</option>
+                                        <option value="Incredible">Incredible</option>
+                                        <option value="Park Continental">Park Continental</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Check-In Date</td>
+                                <td class="label"><input class="input" type="date" name="indate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Check-in Time</td>
+                                <td class="label"><input class="input" type="time" name="intime" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Check-Out Date</td>
+                                <td class="label"><input class="input" type="date" name="outdate" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Check-Out Time</td>
+                                <td class="label"><input class="input" type="time" name="outtime" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Adults</td>
+                                <td class="label"><input class="input" type="number" placeholder="no.of Adults" name="adults" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Children</td>
+                                <td class="label"><input class="input" type="number" placeholder="no.of children" name="children" required></td>
+                            </tr>
+                            <tr>
+                                <td class="label1">Room Preference</td>
+                                <td>
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">Standard</label>
+                                    <input type="radio" id="css" name="fav_language" value="CSS">
+                                    <label for="css">Deluxe</label>
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                    <label for="javascript">Suite</label>
+                                </td>
+                            </tr>
+                      
+                        </table>
+        
+                        <div align="center" style="margin-top:40px">
+                            <button style="background:rgb(5, 219, 23);" type="submit">Submit</button>
+                            <button style="background: rgb(199, 53, 17);" type="reset">Reset</button>
+                        </div>
+        
+                    </form>
+                </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@ Hyderabad website, developed and hosted by</p>
+        <p> <a>Devendar Banoth</a></p>
+    </div>
+
+
+
+</body>
+
+</html>
